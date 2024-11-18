@@ -1,42 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dp education java script program</title>
-    <script>
-        let a = 10;
-        let b = 15;
-        let c = a+b;
-        console.log(c);
-        console.log(b-a);
-        console.log(a*b);
-        console.log(b/a);
-        console.log(b%a);
-
-        a++;
-        console.log(a);
-        b--;
-        b--;
-        console.log(b);
-
-        let firstName = "Kamal";
-        let lastName = "Kumaarathunga";
-        console.log(firstName+lastName);
-        console.log(firstName+" "+lastName);
-
-        // comparison operators
-        a = true;
-        b = false;
-        // AND
-        console.log(a && b);
-        // OR
-        console.log(a || b);
-        console.log(!a || b);
-    </script>
-</head>
-<body>
-    <h1>Add Js To HTML</h1>
-     
-</body>
+<html>
+    <head>
+        <title>Functions in JavaScript</title>
+        <script>
+            function nameOutput(firstName,lastName,age){
+                let fullName = "My name is : "+firstName+" "+lastName+" and My Age is : "+age+" Years.";
+                return fullName;
+            }
+            let ShowName = nameOutput("kamal","addara aarchchi",45);
+            console.log(ShowName);
+        </script>
+    </head>
+        <h1>Functions</h1>
+    <body>
+        
+    </body>
 </html>
