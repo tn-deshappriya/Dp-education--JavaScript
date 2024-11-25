@@ -8,13 +8,11 @@
         let globalScope = "This Is A Global Var";
 
         function getOut(){
-            let localScope = "This Is A Local Variable";
-            console.log(globalScope); // Global Variable can access inside and outside functions.And it can access any place in-the code.
-            console.log(localScope);// This one can access in this function.
+            globalScope = "Changed";
+            console.log(globalScope); 
         }
         getOut();  
         console.log(globalScope);
-        console.log(localScope); // Local variable can not access any place.
     </script>
 </head>
 <body>
