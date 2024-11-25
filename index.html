@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Functions in JavaScript</title>
-        <script>
-            function nameOutput(firstName,lastName,age){
-                let fullName = "My name is : "+firstName+" "+lastName+" and My Age is : "+age+" Years.";
-                return fullName;
-            }
-            let ShowName = nameOutput("kamal","addara aarchchi",45);
-            console.log(ShowName);
-        </script>
-    </head>
-        <h1>Functions</h1>
-    <body>
-        
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope</title>
+    <script>
+        let globalScope = "This Is A Global Var";
+
+        function getOut(){
+            console.log(globalScope); // Global Variable can access inside and outside functions.                                    
+        }                             // And it can access any place in-the code.
+        getOut();   
+    </script>
+</head>
+<body>
+    <h1>Scope</h1>
+</body>
 </html>
