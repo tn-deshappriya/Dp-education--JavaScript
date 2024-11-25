@@ -11,8 +11,11 @@
             let globalScope = "Changed";
             console.log(globalScope); 
         }
-        getOut();  
-        console.log(globalScope);
+        {
+            let blockScope = "This Is Block Scope.";
+            console.log(blockScope);
+        }
+        console.log(blockScope);  // got error
     </script>
 </head>
 <body>
